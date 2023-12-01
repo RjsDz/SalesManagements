@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buildingproject.FXMLSearchController">
+   <children>
+      <TextField fx:id="searchInp" layoutX="17.0" layoutY="13.0" onKeyReleased="#filter" prefHeight="46.0" prefWidth="450.0" promptText="Search For Product">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="sendBut" layoutX="481.0" layoutY="13.0" mnemonicParsing="false" onAction="#sendData" prefHeight="46.0" prefWidth="146.0" text="Send (Ctrl +S)">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="17.0" layoutY="67.0" onKeyPressed="#insertIntoInput" onMouseClicked="#insertIntoInput" prefHeight="438.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="codeCol" prefWidth="127.20001220703125" text="Code" />
+          <TableColumn fx:id="desCol" prefWidth="143.20001220703125" text="Designation" />
+            <TableColumn fx:id="udmCol" prefWidth="143.20001220703125" text="UDM" />
+            <TableColumn fx:id="puCol" prefWidth="99.20001220703125" text="Prix Unitair" />
+            <TableColumn fx:id="dispCol" prefWidth="92.79998779296875" text="Disponibility" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="exitImg" fitHeight="39.0" fitWidth="37.0" layoutX="17.0" layoutY="523.0" onMouseClicked="#exitF" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="526.0" text="Exit (Ctrl +E)">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="631.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buildingproject.FXMLBlackListController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="157.0" onMouseClicked="#selectL" prefHeight="446.0" prefWidth="512.0">
+        <columns>
+          <TableColumn fx:id="matCol" prefWidth="115.99999713897705" text="Mattricule" />
+          <TableColumn fx:id="nom" prefWidth="88.80001831054688" text="Nome" />
+            <TableColumn fx:id="prenCol" prefWidth="88.80001831054688" text="Prenom" />
+            <TableColumn fx:id="dueCol" prefWidth="104.0" text="Dues" />
+            <TableColumn fx:id="phone" prefWidth="104.0" text="Phone" />
+        </columns>
+      </TableView>
+      <TableView fx:id="blTable" layoutX="630.0" layoutY="157.0" onMouseClicked="#selectR" prefHeight="446.0" prefWidth="512.0">
+         <columns>
+            <TableColumn fx:id="blMatCol" prefWidth="115.99999713897705" text="Mattricule" />
+            <TableColumn fx:id="blNom" prefWidth="88.80001831054688" text="Nome" />
+            <TableColumn fx:id="blPrenCol" prefWidth="88.80001831054688" text="Prenom" />
+            <TableColumn fx:id="blDueCol" prefWidth="104.0" text="Dues" />
+            <TableColumn fx:id="blPhone" prefWidth="104.0" text="Phone" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="toBl" fitHeight="37.0" fitWidth="57.0" layoutX="560.0" layoutY="307.0" onMouseClicked="#toBL" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/right-arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="factory" fitHeight="37.0" fitWidth="53.0" layoutX="560.0" layoutY="362.0" onMouseClicked="#fromBL" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/left-arrow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="806.0" layoutY="82.0" text="Black List">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="changedLab" layoutX="194.0" layoutY="82.0" text="Clients">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="filterInp" alignment="CENTER" layoutX="456.0" layoutY="81.0" onKeyReleased="#filterF" prefHeight="54.0" prefWidth="230.0" promptText="Search..." style="-fx-font-weight: bold; -fx-font-size: 26px;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

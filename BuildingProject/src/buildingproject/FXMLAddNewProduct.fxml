@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buildingproject.FXMLAddNewProductController">
+   <children>
+      <ImageView fitHeight="137.0" fitWidth="188.0" layoutX="239.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pr.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="code" layoutX="36.0" layoutY="213.0" prefHeight="46.0" prefWidth="230.0" promptText="Code...">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="pruni" layoutX="36.0" layoutY="287.0" prefHeight="46.0" prefWidth="230.0" promptText="Prix Unitaire...">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="udm" layoutX="352.0" layoutY="287.0" prefHeight="46.0" prefWidth="230.0" promptText="Unité De Mesure...">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="desi" layoutX="352.0" layoutY="213.0" prefHeight="46.0" prefWidth="230.0" promptText="Designation...">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="expImp" layoutX="36.0" layoutY="362.0" prefHeight="46.0" prefWidth="230.0" promptText="Choose Kind" style="-fx-font-size: 20; -fx-font-weight: bold;" />
+      <CheckBox fx:id="disp" layoutX="361.0" layoutY="372.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="222.0" selected="true" text="Disponible">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="add" layoutX="36.0" layoutY="453.0" mnemonicParsing="false" onAction="#addP" text="Add Product" textFill="#00ff09">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="delBut" layoutX="472.0" layoutY="453.0" mnemonicParsing="false" onAction="#deleteP" prefHeight="43.0" prefWidth="146.0" text="Del Product" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="exitImg" fitHeight="46.0" fitWidth="54.0" layoutX="9.0" layoutY="518.0" onMouseClicked="#exitF" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="63.0" layoutY="527.0" text="Exit (Ctrl + E)">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="updBut" layoutX="221.0" layoutY="453.0" mnemonicParsing="false" onAction="#updateP" text="Change Diponibility" textFill="#ffcc00">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

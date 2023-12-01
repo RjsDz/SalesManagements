@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="542.0" prefWidth="738.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="buildingproject.FXMLStatController">
+   <children>
+      <Label layoutX="40.0" layoutY="8.0" prefHeight="18.0" prefWidth="482.0" text="Payments and Dues" textFill="#1ac7f7" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="130.0" prefHeight="70.0" prefWidth="200.0" text="Clients" textFill="#1ac7f7">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="120.0" prefHeight="70.0" prefWidth="294.0" text="Fournieseurs" textFill="#1ac7f7">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pF" layoutX="26.0" layoutY="193.0" prefHeight="310.0" prefWidth="322.0" />
+      <PieChart fx:id="pC" layoutX="400.0" layoutY="193.0" prefHeight="310.0" prefWidth="322.0" />
+   </children>
+</AnchorPane>

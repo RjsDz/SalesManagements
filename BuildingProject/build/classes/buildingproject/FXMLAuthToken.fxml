@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="406.0" style="-fx-background-color: #ddd;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="buildingproject.FXMLAuthTokenController">
+   <children>
+      <ImageView fitHeight="142.0" fitWidth="188.0" layoutX="132.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userInp" alignment="CENTER" layoutX="57.0" layoutY="203.0" prefHeight="46.0" prefWidth="306.0" promptText="Username..." AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="57.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="cancelBut" layoutX="78.0" layoutY="428.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="148.0" style="-fx-font-weight: bold;" text="Cancel" textFill="#fc0000" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logBut" layoutX="203.0" layoutY="375.0" mnemonicParsing="false" onAction="#loginF" prefHeight="40.0" prefWidth="148.0" style="-fx-font-weight: bold;" text="Log in " textFill="#151515" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passInp" alignment="CENTER" layoutX="57.0" layoutY="268.0" prefHeight="46.0" prefWidth="292.0" promptText="Password..." style="-fx-font-weight: bold;" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="57.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buildingproject.FXMLAddDealerController">
+   <children>
+      <TextField fx:id="nom" layoutX="62.0" layoutY="154.0" prefHeight="46.0" prefWidth="279.0" promptText="Nome">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="pren" layoutX="423.0" layoutY="156.0" prefHeight="46.0" prefWidth="279.0" promptText="Prenome">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="vil" layoutX="62.0" layoutY="240.0" prefHeight="46.0" prefWidth="279.0" promptText="Ville">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ndt" layoutX="424.0" layoutY="240.0" prefHeight="46.0" prefWidth="279.0" promptText="Numero De Telephone">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="pay" layoutX="62.0" layoutY="329.0" onKeyReleased="#dueF" prefHeight="46.0" prefWidth="279.0" promptText="Payments">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="due" editable="false" layoutX="429.0" layoutY="330.0" prefHeight="46.0" prefWidth="279.0" promptText="Dues">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="rec" layoutX="62.0" layoutY="411.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="182.0" selected="true" text="Received">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="clienFourn" layoutX="58.0" layoutY="19.0" prefHeight="54.0" prefWidth="647.0" style="-fx-font-weight: bold;" textFill="#059fff" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="savBut" layoutX="189.0" layoutY="507.0" mnemonicParsing="false" onAction="#saveToDB" prefHeight="46.0" prefWidth="146.0" style="-fx-font-weight: bold;" text="Save" textFill="#11ff00">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="canBut" layoutX="384.0" layoutY="507.0" mnemonicParsing="false" onAction="#exitF" prefHeight="46.0" prefWidth="146.0" style="-fx-font-weight: bold;" text="Cancel" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="price" alignment="CENTER" layoutX="388.0" layoutY="411.0" prefHeight="54.0" prefWidth="314.0" style="-fx-font-weight: bold;" text="0000" textFill="#00f441">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
